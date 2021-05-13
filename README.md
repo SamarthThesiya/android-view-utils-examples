@@ -1,6 +1,6 @@
 # Android View Utils Example
 
-This repository contains the examples of <a href="https://github.com/SamarthThesiya/android-view-utils">Android-View-Utils</a>. You can find below usage of this library here.
+This repository contains the usages of <a href="https://github.com/SamarthThesiya/android-view-utils">Android-View-Utils</a>. You can find below usages of this library in this repo.
 
 ## Usage
 * Use built in validation for EditText like Required, Minimun length, Match regex, etc.
