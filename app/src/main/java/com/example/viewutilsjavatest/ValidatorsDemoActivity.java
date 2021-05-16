@@ -138,7 +138,7 @@ public class ValidatorsDemoActivity extends AppCompatActivity implements View.On
                         etRegex.setEnabled(true);
                         break;
                     case 1:
-                        etRegex.setText("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$");
+                        etRegex.setText("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$");
                         etRegex.setEnabled(false);
                         break;
                     case 2:

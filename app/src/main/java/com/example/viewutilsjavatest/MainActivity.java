@@ -14,11 +14,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LinearLayout btnBuiltInValidators                = findViewById(R.id.layout_built_in_validators);
+        LinearLayout btnValidators                       = findViewById(R.id.layout_validator_demo);
+        LinearLayout btnVuFragmentManager                = findViewById(R.id.layout_vu_fragment_management);
+        LinearLayout btnVuFragmentManagerTabs            = findViewById(R.id.layout_vu_fragment_management_tabs);
         LinearLayout btnVuRecyclerView                   = findViewById(R.id.layout_vu_recyclerview);
         LinearLayout btnVuRecyclerViewWithoutDataBinding = findViewById(R.id.layout_vu_recyclerview_without_data_binding);
 
-        btnBuiltInValidators.setOnClickListener(this);
+        btnValidators.setOnClickListener(this);
+        btnVuFragmentManager.setOnClickListener(this);
+        btnVuFragmentManagerTabs.setOnClickListener(this);
         btnVuRecyclerView.setOnClickListener(this);
         btnVuRecyclerViewWithoutDataBinding.setOnClickListener(this);
     }
@@ -27,8 +31,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.layout_built_in_validators:
+            case R.id.layout_validator_demo:
                 startActivity(new Intent(this, ValidatorsDemoActivity.class));
+                break;
+            case R.id.layout_vu_fragment_management:
+                startActivity(new Intent(this, ValidatorsExampleWithVuFragmentManagerActivity.class));
+                break;
+            case R.id.layout_vu_fragment_management_tabs:
+                startActivity(new Intent(this, VuFragmentManagementTabbedActivity.class));
                 break;
             case R.id.layout_vu_recyclerview:
                 startActivity(new Intent(this, VuRecyclerViewDemoActivity.class));

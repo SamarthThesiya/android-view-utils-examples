@@ -19,8 +19,8 @@ public class MyValidators extends VuValidationMethods {
         if (vuValidatable.getText().toString().toCharArray()[0] != '+') {
             if (TextUtils.isEmpty(validation.getMessage())) {
                 validation.setMessage("Should start with '+'");
-                return false;
             }
+            return false;
         }
         return true;
     }
